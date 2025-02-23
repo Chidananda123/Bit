@@ -1,0 +1,263 @@
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~
+$ cd OneDrive/
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive
+$ cd Desktop/
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop
+$ cd Git
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git
+$ cd init
+bash: cd: init: No such file or directory
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git
+$ cd Git init
+bash: cd: too many arguments
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git
+$ git init
+Initialized empty Git repository in C:/Users/Srinivasu/OneDrive/Desktop/Git/.git/
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ touch him.java
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ touch me.js
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ touch text.txt
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git add period
+fatal: pathspec 'period' did not match any files
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git add .
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   him.java
+        new file:   me.js
+        new file:   text.txt
+
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git commit -m "second change"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Srinivasu@LAPTOP-4DRSOO71.(none)')
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git commit -m "first change"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Srinivasu@LAPTOP-4DRSOO71.(none)')
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ ^C
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git config --global user.email
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git config --global user.email "vendrachidananda@gmail.com"
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git config --global user.name "Chidananda"
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git commit -m "first change"
+[master (root-commit) 620b305] first change
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 him.java
+ create mode 100644 me.js
+ create mode 100644 text.txt
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git commit -m "second change"
+On branch master
+nothing to commit, working tree clean
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git commit -m "first change"
+On branch master
+nothing to commit, working tree clean
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   me.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git add me.js
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git commit -m "new Change in me"
+[master 6c63a34] new Change in me
+ 1 file changed, 1 insertion(+)
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git rm --cached text.txt
+rm 'text.txt'
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    text.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        text.txt
+
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git commit -m "deleted text.txt"
+[master 636a8fc] deleted text.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 text.txt
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        text.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ ^C
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$  git branch password verification
+fatal: not a valid object name: 'verification'
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git brach login page
+git: 'brach' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git branch login page
+fatal: not a valid object name: 'page'
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git branch login_page
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git checkout login_page
+Switched to branch 'login_page'
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (login_page)
+$ git status
+On branch login_page
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        text.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (login_page)
+$ git add .
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (login_page)
+$ git commit -m "update"
+[login_page c460844] update
+ 3 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 text.txt
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (login_page)
+$ git checkout master
+Switched to branch 'master'
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git checkout login_page
+Switched to branch 'login_page'
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (login_page)
+$ git checkout master
+Switched to branch 'master'
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git merge login_page
+Updating 636a8fc..c460844
+Fast-forward
+ him.java | 1 +
+ me.js    | 3 ++-
+ text.txt | 0
+ 3 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 text.txt
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git remote
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git remote add test https://github.com/Chidananda123/Bit.git
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git push -u test master
+info: please complete authentication in your browser...
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (12/12), 960 bytes | 192.00 KiB/s, done.
+Total 12 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/Chidananda123/Bit.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'test/master'.
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git push -u test login_page
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'login_page' on GitHub by visiting:
+remote:      https://github.com/Chidananda123/Bit/pull/new/login_page
+remote:
+To https://github.com/Chidananda123/Bit.git
+ * [new branch]      login_page -> login_page
+branch 'login_page' set up to track 'test/login_page'.
+
+Srinivasu@LAPTOP-4DRSOO71 MINGW64 ~/OneDrive/Desktop/Git (master)
